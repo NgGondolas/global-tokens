@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@nggondolas/global-tokens": [
+        "dist/global-tokens"
+      ],
+      "@nggondolas/global-tokens/*": [
+        "dist/global-tokens/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

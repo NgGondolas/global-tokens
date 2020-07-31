@@ -13,7 +13,7 @@ export const GET_BROWSER = new InjectionToken<string>('User Agent', {
 
 @Component({})
 export class AppComponent {
-  	constructor(@Inject(GET_BROWSER) private readonly userAgent: string) {}
+    constructor(@Inject(GET_BROWSER) private readonly userAgent: string) {}
 
     get foo(): string {
         return this.userAgent;
